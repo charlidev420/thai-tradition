@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>รูปประเพณีของไทย</title>
+	<style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+            width: 1024px;
+            margin: 0 auto; /* Center the gallery */
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1); 
+            transform: scale(1);
+            transition-duration: 0.7s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1); /* Add hover effect */
+        }
+	</style>
+	<link rel="stylesheet" href="style/gallery.css">
+</head>
+<body>
+<table width="1024" border="0" align="center">
+  <tbody>
+    <tr>
+      <td><img src="icons/header.png" width="1024" height="300" alt=""/></td>
+    </tr>
+    <tr>
+      <td>
+		<ul>
+    <li><a href="index.html">หน้าหลัก</a></li>
+    <li class="dropdown">
+        <div class="dropbtn">แกลเลอรี่</div>
+           <div class="dropdown-content">
+           <a href="ชุดประจำภาค.html">ชุดประจำภาค</a>
+           <a href="รูปประเพณีของไทย.html">รูปประเพณีของไทย</a>
+        </div>
+    </li>
+    <li><a href="ประเพณีภาคเหนือ.html">ประเพณีภาคเหนือ</a></li>
+    <li><a href="ประเพณีภาคกลาง.html">ประเพณีภาคกลาง</a></li>
+    <li><a href="ประเพณีภาคอีสาน.html">ประเพณีภาคอีสาน</a></li>
+    <li><a href="ประเพณีภาคใต้.html">ประเพณีภาคใต้</a></li>
+</ul>
+		</td>
+    </tr>
+    <tr align="center" valign="middle">
+      <td align="left">
+		  <div id="show" class="gallery">
+        <img src="images/ประเพณีแห่เทียนเข้าพรรษา/1.jpg" alt="" id="">
+        <img src="images/ประเพณีแห่เทียนเข้าพรรษา/2.jpg" alt="">
+        <img src="images/ประเพณีแห่เทียนเข้าพรรษา/3.jpg" alt="">
+			  <img src="images/ประเพณีแห่เทียนเข้าพรรษา/4.jpg" alt="">
+			  <img src="images/ประเพณีแห่เทียนเข้าพรรษา/5.jpg" alt="">
+			  <img src="images/ประเพณีแห่เทียนเข้าพรรษา/6.jpg" alt="">
+			  <img src="images/ประเพณีการแข่งเรือยาว/1.jpg" alt="">
+			  <img src="images/ประเพณีการแข่งเรือยาว/2.jpg" alt="">
+			  <img src="images/ประเพณีการแข่งเรือยาว/3.jpg" alt="">
+			  <img src="images/ประเพณีการแข่งเรือยาว/4.jpg" alt="">
+			  <img src="images/ประเพณีการแข่งเรือยาว/5.jpg" alt="">
+			  <img src="images/ประเพณีการแข่งโพน/1.jpg" alt="">
+			  <img src="images/ประเพณีการแข่งโพน/2.jpg" alt="">
+			  <img src="images/ประเพณีการแข่งโพน/3.jpg" alt="">
+        <img src="images/ประเพณีบุญบั้งไฟ/1.jpg" alt="">
+        <img src="images/ประเพณีบุญบั้งไฟ/2.jpg" alt="">
+        <img src="images/ประเพณีบุญบั้งไฟ/3.jpg" alt="">
+	<img src="images/ประเพณีบุญบั้งไฟ/4.jpg" alt="">
+	<img src="images/ประเพณีบุญบั้งไฟ/5.jpg" alt="">
+	<img src="images/ประเพณีบุญบั้งไฟ/6.jpg" alt="">
+        <img src="images/ประเพณีลากพระ(ชักพระ)/1.jpg" alt="">
+        <img src="images/ประเพณีลากพระ(ชักพระ)/2.jpg" alt="">
+        <img src="images/ประเพณีลากพระ(ชักพระ)/3.jpg" alt="">
+        <img src="images/ประเพณีสู่ขวัญข้าว/1.jpg" alt="">
+        <img src="images/ประเพณีสู่ขวัญข้าว/2.jpg" alt="">
+        <img src="images/ประเพณีสู่ขวัญข้าว/3.jpg" alt="">
+        <img src="images/ประเพณีอุ้มพระดำน้ำ/1.jpg" alt="">
+        <img src="images/ประเพณีอุ้มพระดำน้ำ/2.jpg" alt="">
+        <img src="images/ประเพณีอุ้มพระดำน้ำ/3.jpg" alt="">
+        <img src="images/วิ่งควาย/1.jpg" alt="">
+        <img src="images/วิ่งควาย/2.jpg" alt="">
+        <img src="images/วิ่งควาย/3.jpg" alt="">
+			  <img src="images/วิ่งควาย/4.jpg" alt="">
+    </div
+		  	<h1>&nbsp;</h1>
+	  	<p>&nbsp;</p>
+        <table width="500" border="0" align="center">      
+        </table></td>
+    </tr>
+    <tr>
+      <td>
+		<footer>
+  <p>®2567</p>
+</footer>
+		</td>
+    </tr>
+  </tbody>
+</table>
+	    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const gallery = document.querySelector("#show");
+            const images = gallery.querySelectorAll("img");
+            images.forEach(img => {
+                img.addEventListener("click", function() {
+                    window.open(img.src, "_blank");
+                });
+            });
+        });
+    </script>
+	
+</body>
+</html>
